@@ -135,9 +135,3 @@ export GOOGLE_API_KEY="your-api-key-here"
 ### Usage
 
 Open the Jupyter notebooks in the `notebooks/` directory and follow the step-by-step instructions to connect your database, configure the LLM, and start querying in natural language.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License. See `LICENSE` for details.
