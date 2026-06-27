@@ -2,8 +2,6 @@
 
 A Generative AI-powered chatbot that lets non-technical users query a database using plain English — no SQL knowledge required.
 
----
-
 ## 📌 About the Project
 
 This project implements a **Text-to-SQL chatbot** that bridges the gap between natural language and database queries. Users simply ask a question in plain English, and the system:
@@ -13,8 +11,6 @@ This project implements a **Text-to-SQL chatbot** that bridges the gap between n
 3. Returns the result in a clear, readable format
 
 The architecture is **completely domain-agnostic** and can be adapted for any industry — retail, healthcare, sales, marketing, and more.
-
----
 
 ## 🏗️ Architecture & Workflow
 
@@ -49,7 +45,6 @@ Result (e.g., "$1.5 million" or "15 orders")
 | **5. Query Execution** | The generated SQL is parsed and executed on the MySQL database |
 | **6. Response (Optional)** | An additional LLM layer can reformat raw output into a conversational sentence |
 
----
 
 ## 💻 Tech Stack
 
@@ -61,7 +56,6 @@ Result (e.g., "$1.5 million" or "15 orders")
 | **Frameworks** | LangChain (`SQLDatabase`, `create_sql_query_chain`, `langchain_google_genai`) |
 | **Evaluation** | RAGAS + Hugging Face Embeddings |
 
----
 
 ## 📊 Dataset
 
@@ -76,8 +70,6 @@ This project uses a dummy **retail and sales dataset** simulating a relational d
 | `state_regions` | — |
 | `budgets` | — |
 
----
-
 ## 🧪 Evaluation
 
 Generated SQL queries are evaluated using the **RAGAS framework**, tested against a ground-truth dataset of pre-written questions and queries built from domain knowledge.
@@ -87,7 +79,6 @@ Generated SQL queries are evaluated using the **RAGAS framework**, tested agains
 | **Context Precision** | Measures the relevance of the retrieved schema and context |
 | **Helpfulness** | Evaluates whether the response meets user expectations (adapted Google helpfulness rubric) |
 
----
 
 ## 🚀 Future Enhancements
 
@@ -96,7 +87,6 @@ Generated SQL queries are evaluated using the **RAGAS framework**, tested agains
 - [ ] **Frontend Application** — Build a web UI using Flask or Streamlit
 - [ ] **Cloud Deployment** — Deploy to AWS, Azure, GCP, or Heroku for public access
 
----
 
 ## 📁 Project Structure
 
@@ -107,8 +97,6 @@ text-to-sql-rag-chatbot/
 ├── evaluation/         # RAGAS evaluation scripts and ground-truth datasets
 └── README.md
 ```
-
----
 
 ## 🛠️ Getting Started
 
